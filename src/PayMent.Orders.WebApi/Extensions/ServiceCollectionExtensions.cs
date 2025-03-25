@@ -1,6 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using PayMent.Orders.Domain.Data;
+using PayMents.Orders.Application.Abstractions;
+using PayMents.Orders.Application.MapperProfiels;
+using PayMents.Orders.Application.MapperProfile;
+using PayMents.Orders.Application.Service;
 
 namespace PayMent.Orders.WebApi.Extensions;
 
@@ -46,6 +50,14 @@ public static class ServiceCollectionExtensions
 
     public static WebApplicationBuilder AddAplicationService(this WebApplicationBuilder builder) 
     {
+        builder.Services.AddScoped<ICartService, CartService>();
+        builder.Services.AddScoped<IOrderService,OrderService>();
+
+        builder.Services.AddAutoMapper(
+              typeof(OrderProfile)
+            , typeof(CartItemProfile)
+            , typeof(OrderProfile));
+        
         return builder;
     }
 

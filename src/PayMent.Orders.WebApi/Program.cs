@@ -2,7 +2,6 @@ using PayMent.Orders.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -12,9 +11,6 @@ builder.AddSwagger()
     .AddIntegrationService();
 
 var app = builder.Build();
-
-
-
 
 app.UseAuthorization();
 

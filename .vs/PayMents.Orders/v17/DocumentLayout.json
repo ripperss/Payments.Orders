@@ -3,12 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\models\\orders\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\models\\orders\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\models\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\models\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\items\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\items\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\items\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\items\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\items\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\items\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\items\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\items\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\items\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\items\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\models\\carts\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\models\\carts\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\models\\carts\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\models\\carts\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\abstractions\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\abstractions\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\mapperprofiels\\cartitemprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\mapperprofiels\\cartitemprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\mapperprofiels\\cartprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\mapperprofiels\\cartprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\mapperprofiels\\orderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\mapperprofiels\\orderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\abstractions\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|solutionrelative:src\\payments.orders.application\\abstractions\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCC4F0B4-14F2-4A4D-870F-CCA43C142C92}|src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payments.orders.application\\payments.orders.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -19,40 +95,8 @@
       "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\payment.orders.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5406216E-E9F5-4AE8-9F65-FCEF648E2132}|src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj|solutionrelative:src\\payment.orders.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\data\\ordersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\data\\ordersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|c:\\users\\user\\source\\repos\\api\\payments.orders\\src\\payment.orders.domain\\payment.orders.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F4EBBB29-ABA3-4293-B371-5DDA5EAC54A5}|src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj|solutionrelative:src\\payment.orders.domain\\payment.orders.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,170 +111,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiBaseCOntroller.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseCOntroller.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseCOntroller.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseCOntroller.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseCOntroller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:05:59.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PayMent.Orders.WebApi",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
-              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-21T13:03:25.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\appsettings.json",
-              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABtAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\appsettings.json*",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-21T12:59:11.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\BaseModel.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Models\\BaseModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\BaseModel.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Models\\BaseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:54:48.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Program.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:46:24.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Order.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:36:48.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Customer.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:35:13.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PayMents.Orders.Application",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
-              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
-              "RelativeToolTip": "src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-21T12:16:40.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cartitem.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Cartitem.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Models\\Cartitem.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Cartitem.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Models\\Cartitem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:45:35.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Models\\Cart.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:36:39.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:33:08.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrdersDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T12:31:09.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PayMent.Orders.Domain",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj",
-              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj",
-              "RelativeToolTip": "src\\PayMent.Orders.Domain\\PayMent.Orders.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-21T12:27:39.884Z",
+              "WhenOpened": "2025-03-25T12:43:20.905Z",
               "EditorCaption": ""
             },
             {
@@ -252,6 +140,305 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Program.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T12:22:41.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T12:19:55.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:33:08.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Order.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Items\\Order.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Order.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Items\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:36:48.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Customer.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Items\\Customer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Customer.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Items\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:35:13.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cartitem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Cartitem.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Items\\Cartitem.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Cartitem.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Items\\Cartitem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:45:35.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Cart.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Items\\Cart.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\Cart.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Items\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:36:39.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseItem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\BaseItem.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Items\\BaseItem.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Items\\BaseItem.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Items\\BaseItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:54:48.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Orders\\OrderDto.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Models\\Orders\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Orders\\OrderDto.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Models\\Orders\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:57:40.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Orders\\CreateOrderDto.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Models\\Orders\\CreateOrderDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Orders\\CreateOrderDto.cs*",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Models\\Orders\\CreateOrderDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:43:49.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CartItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Carts\\CartItemDto.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Models\\Carts\\CartItemDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Carts\\CartItemDto.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Models\\Carts\\CartItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:50:16.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Service\\OrderService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Service\\OrderService.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Service\\OrderService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAApwCYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:05:28.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Service\\CartService.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Service\\CartService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Service\\CartService.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Service\\CartService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:31:38.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseController.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseController.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\Controllers\\ApiBaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T12:20:30.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Abstractions\\ICartService.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Abstractions\\ICartService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Abstractions\\ICartService.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Abstractions\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:29:58.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Carts\\CartDto.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Models\\Carts\\CartDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Models\\Carts\\CartDto.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Models\\Carts\\CartDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:49:33.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CartItemProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\CartItemProfile.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\MapperProfiels\\CartItemProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\CartItemProfile.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\MapperProfiels\\CartItemProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:21:21.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CartProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\CartProfile.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\MapperProfiels\\CartProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\CartProfile.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\MapperProfiels\\CartProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:18:17.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\OrderProfile.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\MapperProfiels\\OrderProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\MapperProfiels\\OrderProfile.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\MapperProfiels\\OrderProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T11:13:38.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PayMents.Orders.Application",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\PayMents.Orders.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-25T11:04:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Abstractions\\IOrderService.cs",
+              "RelativeDocumentMoniker": "src\\PayMents.Orders.Application\\Abstractions\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMents.Orders.Application\\Abstractions\\IOrderService.cs",
+              "RelativeToolTip": "src\\PayMents.Orders.Application\\Abstractions\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:37:30.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PayMent.Orders.WebApi.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
+              "RelativeToolTip": "src\\PayMent.Orders.WebApi\\PayMent.Orders.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-21T13:03:25.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrdersDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
+              "RelativeDocumentMoniker": "src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\api\\PayMents.Orders\\src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
+              "RelativeToolTip": "src\\PayMent.Orders.Domain\\Data\\OrdersDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:31:09.873Z",
+              "EditorCaption": ""
             }
           ]
         }

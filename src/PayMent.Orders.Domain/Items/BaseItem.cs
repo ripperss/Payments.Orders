@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PayMent.Orders.Domain.Models;
 
-public class Cart : BaseModel
+public class BaseItem
 {
-    public List<Cartitem> CartItems {  get; set; }
+    public long Id { get; set; }
+    public DateTime  CreatedAt { get; set; }
+    public bool IsActive { get; set; } = true;
 }

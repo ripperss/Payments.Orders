@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayMent.Orders.Domain.Models;
 
-public class Customer : BaseModel
+public class Customer : BaseItem
 {
     public string Phone {  get; set; }
     public string FirstName { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayMent.Orders.Domain.Models;
 
-public class Cartitem : BaseModel
+public class Cartitem : BaseItem
 {
     public string Name { get; set; }
     public int Quentity { get; set; }
