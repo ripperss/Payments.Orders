@@ -10,9 +10,9 @@ namespace PayMents.Orders.Application.Abstractions;
 public interface IOrderService
 {
     Task<OrderDto> Create(CreateOrderDto createOrderDto);
-    Task<OrderDto> GetById(int orderId);
-    Task<List<OrderDto>> GetByUser(int customerId);
+    Task<OrderDto> GetById(long orderId);
+    Task<List<OrderDto>> GetByUser(long customerId);
     Task<List<OrderDto>> GetAll();
-    Task Reject(int orderId);
+    Task Reject(long orderId);
 
 }

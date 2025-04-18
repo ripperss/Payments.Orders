@@ -1,10 +1,12 @@
-﻿
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PayMent.Orders.Domain.Items;
 using PayMent.Orders.Domain.Models;
 
 namespace PayMent.Orders.Domain.Data;
 
-public class OrdersDbContext : DbContext
+public class OrdersDbContext : IdentityDbContext<UserIdentity, IdentityRoleEntity, long>
 {
     public DbSet<Order> Orders { get; set; }
     public DbSet<Cart> Carts { get; set; }

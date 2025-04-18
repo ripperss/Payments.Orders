@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PayMent.Orders.Domain.Data;
+using PayMent.Orders.Domain.Exception;
 using PayMent.Orders.Domain.Models;
 using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.Models.Orders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace PayMents.Orders.Application.Service;
 
@@ -28,6 +26,11 @@ public class OrderService : IOrderService
     
     public async Task<OrderDto> Create(CreateOrderDto createOrderDto)
     {
+        if (createOrderDto.Cart == null)
+        {
+            throw new ArgumentNullException(nameof(createOrderDto.Cart));
+        }
+        
         var cart = await _cartService.Create(createOrderDto.Cart);
         createOrderDto.CartId = cart.Id;
 
@@ -39,22 +42,43 @@ public class OrderService : IOrderService
         return _mapper.Map<OrderDto>(entity);
     }
 
-    public Task<List<OrderDto>> GetAll()
+    public async Task<List<OrderDto>> GetAll()
     {
-        throw new NotImplementedException();
+        var orders = await _context.Orders
+        .Include(o => o.Cart)
+        .ThenInclude(c => c.CartItems)
+        .ToListAsync();
+        
+        return _mapper.Map<List<OrderDto>>(orders); 
     }
 
-    public Task<OrderDto> GetById(int orderId)
+    public async Task<OrderDto> GetById(long orderId)
     {
-        throw new NotImplementedException();
+        var entity = await _context.Orders
+        .Include(o => o.Cart)
+        .ThenInclude(c => c.CartItems)
+        .FirstOrDefaultAsync(o => o.Id == orderId);
+
+        if (entity == null)
+        {
+            throw new EntityNotFoundException("Order not found");
+        }
+
+        return _mapper.Map<OrderDto>(entity);
     }
 
-    public Task<List<OrderDto>> GetByUser(int customerId)
+    public async Task<List<OrderDto>> GetByUser(long customerId)
     {
-        throw new NotImplementedException();
+        var orders = await _context.Orders
+        .Include(o => o.Cart)
+        .ThenInclude(c => c.CartItems)
+        .Where(o => o.CustomerId == customerId)
+        .ToListAsync();
+
+        return _mapper.Map<List<OrderDto>>(orders);
     }
 
-    public Task Reject(int orderId)
+    public Task Reject(long orderId)
     {
         throw new NotImplementedException();
     }

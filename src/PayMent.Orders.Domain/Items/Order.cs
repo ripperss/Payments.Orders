@@ -13,8 +13,8 @@ public class Order : BaseItem
     public string OrderName { get; set; }
 
     public Customer Customer { get; set; }
-    public int CustomerId { get; set; }
+    public long CustomerId { get; set; }
 
     public Cart  Cart { get; set; }
-    public int CartId { get; set; }
+    public long CartId { get; set; }
 }
