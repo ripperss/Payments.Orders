@@ -10,7 +10,8 @@
 *.userosscache
 *.sln.docstates
 .vs/
-src/PayMent.Orders.WebApi/appsettings
+src/PayMent.Orders.WebApi/appsettings.json
+src/PayMent.Orders.WebApi/appsettings.*.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
