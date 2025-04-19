@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PayMents.Orders.Application.Service;
+namespace PayMents.Orders.Application.Settings;
 
 public class AppSettings
 {

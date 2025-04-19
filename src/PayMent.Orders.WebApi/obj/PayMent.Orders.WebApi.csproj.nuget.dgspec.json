@@ -154,6 +154,18 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "Hangfire.PostgreSql": {
+              "target": "Package",
+              "version": "[1.20.12, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -277,6 +289,14 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.18, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -304,6 +324,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.8.0, )"
+            },
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

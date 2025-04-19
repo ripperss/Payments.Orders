@@ -10,10 +10,12 @@ namespace PayMent.Orders.WebApi.Controllers;
 public class AuthController : ApiBaseController
 {
     private readonly IAuthService _authService;
+    private readonly IRoleInitializerService _roleInitializerService;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, IRoleInitializerService roleInitializerService)
     {
         _authService = authService;
+        _roleInitializerService = roleInitializerService;
     }
 
 
@@ -22,6 +24,8 @@ public class AuthController : ApiBaseController
     {
         try
         {
+            await _roleInitializerService.CreateRoleAsync();
+
             var userResponse = await _authService.Register(userRegisterDto);
             return Created("", userResponse);
         }
@@ -55,5 +59,18 @@ public class AuthController : ApiBaseController
         {
             return BadRequest(new { message = ex.Message });
         }
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> ConfirmEmailAsync(string userId, string Token)
+    {
+        var result = await _authService.ConfirmEmailAsync(userId, Token);
+
+        if(result.Succeeded)
+        {
+            return Ok(result);
+        }
+
+        return Problem(result.Errors.ToString());
     }
 }

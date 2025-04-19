@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Hangfire;
+using Hangfire.PostgreSql;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
@@ -11,6 +13,8 @@ using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.MapperProfiels;
 using PayMents.Orders.Application.MapperProfile;
 using PayMents.Orders.Application.Service;
+using PayMents.Orders.Application.Settings;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace PayMent.Orders.WebApi.Extensions;
@@ -74,7 +78,10 @@ public static class ServiceCollectionExtensions
         builder.Services.AddScoped<IOrderService, OrderService>();
         builder.Services.AddScoped<ICartService, CartService>();
         builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddScoped<IEmailService, EmailService>();
+        builder.Services.AddScoped<IRoleInitializerService, RoleInitializerService>();
 
+        
         return builder;
     }
 
@@ -126,6 +133,18 @@ public static class ServiceCollectionExtensions
 
         builder.Services.AddScoped<IAuthService, AuthService>();
         
+        return builder;
+    }
+
+    public static WebApplicationBuilder AddHangfire(this WebApplicationBuilder builder, IConfiguration configuration)
+    {
+        builder.Services.AddHangfire(options =>
+        {
+            options.UsePostgreSqlStorage(configuration.GetConnectionString("DataBase"));
+        });
+
+        builder.Services.AddHangfireServer();
+
         return builder;
     }
 }

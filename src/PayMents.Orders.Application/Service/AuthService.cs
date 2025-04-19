@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Hangfire;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -7,8 +8,14 @@ using PayMent.Orders.Domain.Items;
 using PayMent.Orders.Domain.Models;
 using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.Models.Auth;
+using PayMents.Orders.Application.Settings;
+using System;
+using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
+using System.Net.Http;
 using System.Security.Claims;
+using System.Security.Policy;
 using System.Text;
 
 namespace PayMents.Orders.Application.Service;
@@ -18,15 +25,18 @@ public class AuthService : IAuthService
     private readonly IOptions<AppSettings> _options;
     private readonly UserManager<UserIdentity> _userManager;
     private readonly IMapper _mapper;
+    private readonly IEmailService _emailService;
 
     public AuthService(
         IOptions<AppSettings> appSettings,
         UserManager<UserIdentity> userManager
-        , IMapper mapper)
+        , IMapper mapper
+        , IEmailService emailService)
     {
         _options = appSettings;
         _mapper = mapper;
         _userManager = userManager;
+        _emailService = emailService;
     }
 
     public async Task<UserResponse> Register(UserRegisterDto userRegisterModel)
@@ -55,6 +65,8 @@ public class AuthService : IAuthService
         var userResponse = _mapper.Map<UserResponse>(user);
         userResponse.Roles = [Role.User];
 
+        BackgroundJob.Enqueue(() => GeneratingConfirmationToken(user));
+
         return userResponse;
     }
 
@@ -75,6 +87,16 @@ public class AuthService : IAuthService
         userResponse.Token = token;
 
         return userResponse;
+    }
+
+    public async Task<IdentityResult> ConfirmEmailAsync(string UserId, string Token)
+    {
+        var user = await _userManager.FindByIdAsync(UserId)
+            ?? throw new EntityNotFoundException("ПОльзователь с данный email  не найден");
+
+        var result = await _userManager.ConfirmEmailAsync(user, Token);
+
+        return result;
     }
 
 
@@ -114,4 +136,14 @@ public class AuthService : IAuthService
 
         return new ClaimsIdentity(claims);
     }
+
+    public async Task GeneratingConfirmationToken(UserIdentity user)
+    {
+        var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+        var confirmationLink = $"localhost:5200/confirm-email?userId={user.Id}&token={WebUtility.UrlEncode(token)}";
+
+        await _emailService.SendEmailAsync(user.Email, confirmationLink);
+    }
+
 }

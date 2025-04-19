@@ -1,24 +1,33 @@
-using PayMents.Orders.Application.Service;
 using PayMent.Orders.WebApi.Extensions;
-using PayMent.Orders.Domain.Data;
+using PayMents.Orders.Application.Settings;
+using Hangfire;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.Configure<AppSettings>
     (builder.Configuration.GetSection(nameof(AppSettings)));
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection(nameof(EmailSettings)));
 
 builder.AddSwagger()
     .AddData()
     .AddApplicationService()
     .AddIntegrationService()
-    .AddBearerAuthorizetion(builder.Configuration);
+    .AddBearerAuthorizetion(builder.Configuration)
+    .AddHangfire(builder.Configuration);
 
 var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseHangfireDashboard("/hangfire", new DashboardOptions
+{
+    DashboardTitle = "Hangfire Dashboard"
+});
 
 app.UseSwagger();
 app.UseSwaggerUI();
