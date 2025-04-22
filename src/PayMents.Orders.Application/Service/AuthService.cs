@@ -9,13 +9,9 @@ using PayMent.Orders.Domain.Models;
 using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.Models.Auth;
 using PayMents.Orders.Application.Settings;
-using System;
-using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
-using System.Net.Http;
 using System.Security.Claims;
-using System.Security.Policy;
 using System.Text;
 
 namespace PayMents.Orders.Application.Service;
@@ -81,12 +77,30 @@ public class AuthService : IAuthService
             throw new UnauthorizedAccessException("Неверный пароль");
         }
 
+        if(!user.EmailConfirmed)
+        {
+            throw new InvalidOperationException("Не подвержден почта");
+        }
+
         var userResponse = _mapper.Map<UserResponse>(user);
         userResponse.Roles = (await _userManager.GetRolesAsync(user)).ToArray();
         var token = await GenerateToken(user);
         userResponse.Token = token;
 
         return userResponse;
+    }
+
+    public async Task ResendEmailConfirmationAsync(string userEmail)
+    {
+        var user = await _userManager.FindByEmailAsync(userEmail) 
+            ?? throw new EntityNotFoundException("Не найдена сущность");
+        
+        if (user.EmailConfirmed)
+        {
+            throw new InvalidOperationException("Данная почта уже подверждена"); 
+        }
+
+        BackgroundJob.Enqueue(() => GeneratingConfirmationToken(user));
     }
 
     public async Task<IdentityResult> ConfirmEmailAsync(string UserId, string Token)
@@ -115,7 +129,7 @@ public class AuthService : IAuthService
 
         var tokenDescriptor = new SecurityTokenDescriptor()
         {
-            Subject = GenerateClaims(userIdentity),
+            Subject = await GenerateClaims(userIdentity),
             Expires = expires,
             SigningCredentials = credentials
         };
@@ -125,7 +139,7 @@ public class AuthService : IAuthService
         return handler.WriteToken(token);
     }
 
-    private ClaimsIdentity GenerateClaims(UserIdentity user)
+    private async Task<ClaimsIdentity> GenerateClaims(UserIdentity user)
     {
         var claims = new List<Claim>()
         {
@@ -133,6 +147,12 @@ public class AuthService : IAuthService
             new Claim(ClaimTypes.Email, user.Email),
             new Claim(ClaimTypes.Name, user.UserName),
         };
+        
+        var roles = await _userManager.GetRolesAsync(user);
+        foreach (var role in roles)
+        {
+            claims.Add(new Claim(ClaimTypes.Role, role));
+        }
 
         return new ClaimsIdentity(claims);
     }
@@ -141,9 +161,8 @@ public class AuthService : IAuthService
     {
         var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
-        var confirmationLink = $"localhost:5200/confirm-email?userId={user.Id}&token={WebUtility.UrlEncode(token)}";
+        var confirmationLink = $"http://localhost:5200/accounts?userId={user.Id}&token={WebUtility.UrlEncode(token)}";
 
         await _emailService.SendEmailAsync(user.Email, confirmationLink);
     }
-
 }

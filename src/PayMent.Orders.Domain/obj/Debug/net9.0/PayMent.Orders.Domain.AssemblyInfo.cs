@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayMent.Orders.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3502317f1d72f85cb4c8787df41a773c19c5a9ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca9a820d1aee039d7845bb5a649c01d3986c695d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayMent.Orders.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayMent.Orders.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

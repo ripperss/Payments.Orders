@@ -46,6 +46,7 @@ public class AuthController : ApiBaseController
         {
             var userResponse = await _authService.Login(userLoginDto);
             return Ok(userResponse);
+
         }
         catch (EntityNotFoundException ex)
         {
@@ -61,7 +62,7 @@ public class AuthController : ApiBaseController
         }
     }
 
-    [HttpGet]
+    [HttpGet("confirmEmail")]
     public async Task<IActionResult> ConfirmEmailAsync(string userId, string Token)
     {
         var result = await _authService.ConfirmEmailAsync(userId, Token);
@@ -72,5 +73,13 @@ public class AuthController : ApiBaseController
         }
 
         return Problem(result.Errors.ToString());
+    }
+
+    [HttpGet("resendEmail")]
+    public async Task<IActionResult> ResendEmailConfirmationAsync(string userEmail)
+    {
+        await _authService.ResendEmailConfirmationAsync(userEmail);
+
+        return Ok();
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayMent.Orders.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39f9e27d40b15009dd04d56a6d9247d1fe74e3f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca9a820d1aee039d7845bb5a649c01d3986c695d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayMent.Orders.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayMent.Orders.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

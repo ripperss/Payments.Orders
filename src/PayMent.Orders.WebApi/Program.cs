@@ -11,6 +11,8 @@ builder.Services.Configure<AppSettings>
     (builder.Configuration.GetSection(nameof(AppSettings)));
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection(nameof(EmailSettings)));
+builder.Services.Configure<RabbtiMqSettings>
+    (builder.Configuration.GetSection(nameof(RabbtiMqSettings)));
 
 builder.AddSwagger()
     .AddData()
