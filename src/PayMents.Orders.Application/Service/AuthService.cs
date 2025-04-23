@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Hangfire;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using PayMent.Orders.Domain.Data;
 using PayMent.Orders.Domain.Exception;
 using PayMent.Orders.Domain.Items;
 using PayMent.Orders.Domain.Models;
@@ -22,17 +24,20 @@ public class AuthService : IAuthService
     private readonly UserManager<UserIdentity> _userManager;
     private readonly IMapper _mapper;
     private readonly IEmailService _emailService;
+    private readonly OrdersDbContext _ordersDbContext;
 
     public AuthService(
         IOptions<AppSettings> appSettings,
         UserManager<UserIdentity> userManager
         , IMapper mapper
-        , IEmailService emailService)
+        , IEmailService emailService,
+         OrdersDbContext ordersDbContext)
     {
         _options = appSettings;
         _mapper = mapper;
         _userManager = userManager;
         _emailService = emailService;
+        _ordersDbContext = ordersDbContext;
     }
 
     public async Task<UserResponse> Register(UserRegisterDto userRegisterModel)
@@ -85,6 +90,12 @@ public class AuthService : IAuthService
         var userResponse = _mapper.Map<UserResponse>(user);
         userResponse.Roles = (await _userManager.GetRolesAsync(user)).ToArray();
         var token = await GenerateToken(user);
+
+        var refreshToken = await CreateRefreshToken(user.Id);
+
+        await _ordersDbContext.RefreshTokens.AddAsync(refreshToken);
+        await _ordersDbContext.SaveChangesAsync();
+
         userResponse.Token = token;
 
         return userResponse;
@@ -164,5 +175,17 @@ public class AuthService : IAuthService
         var confirmationLink = $"http://localhost:5200/accounts?userId={user.Id}&token={WebUtility.UrlEncode(token)}";
 
         await _emailService.SendEmailAsync(user.Email, confirmationLink);
+    }
+
+    private async Task<RefreshToken> CreateRefreshToken(long userId)
+    {
+        var refreshToken = new RefreshToken()
+        {
+            Token = Guid.NewGuid().ToString(),
+            Expires = DateTime.UtcNow.AddDays(7),
+            UserId = userId.ToString()
+        };
+
+        return refreshToken;
     }
 }

@@ -9,6 +9,7 @@ namespace PayMent.Orders.Domain.Data;
 public class OrdersDbContext : IdentityDbContext<UserIdentity, IdentityRoleEntity, long>
 {
 
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<Cart> Carts { get; set; }
     public DbSet<Customer> Customers { get; set; }

@@ -10,6 +10,7 @@ namespace PayMents.Orders.Application.Models.Orders;
 public class CreateOrderDto
 {
     public string Name { get; set; }
+    public string OrderName { get; set; }
     public long OrderNumber { get; set; }
     public long CustomerId { get; set; }
     public long CartId { get; set; }

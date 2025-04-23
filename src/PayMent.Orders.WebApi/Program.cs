@@ -1,11 +1,14 @@
+using FluentValidation.AspNetCore;
 using PayMent.Orders.WebApi.Extensions;
 using PayMents.Orders.Application.Settings;
 using Hangfire;
+using PayMent.Orders.WebApi.Backgroundservices;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
+// Add services to the container.
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Program>());
 
 builder.Services.Configure<AppSettings>
     (builder.Configuration.GetSection(nameof(AppSettings)));
@@ -19,9 +22,18 @@ builder.AddSwagger()
     .AddApplicationService()
     .AddIntegrationService()
     .AddBearerAuthorizetion(builder.Configuration)
-    .AddHangfire(builder.Configuration);
+    .AddHangfire(builder.Configuration)
+    .AddBackgroundService();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -31,8 +43,11 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
     DashboardTitle = "Hangfire Dashboard"
 });
 
-app.UseSwagger();
-app.UseSwaggerUI();
+RecurringJob.AddOrUpdate<NotificationEmailBackground>(
+    "notification",
+    x => x.PushEmailMessage(),
+    Cron.Daily);
+
 
 app.MapControllers();
 

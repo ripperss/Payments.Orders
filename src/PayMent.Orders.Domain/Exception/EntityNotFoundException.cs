@@ -1,4 +1,3 @@
-using System;
 
 namespace PayMent.Orders.Domain.Exception;
 

@@ -1,11 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using PayMent.Orders.Domain.Exception;
 using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.Models.Auth;
 
 namespace PayMent.Orders.WebApi.Controllers;
 
-
+/// <summary>
+/// Контроллер для аутентификации и авторизации пользователей
+/// </summary>
 [Route("accounts")]
 public class AuthController : ApiBaseController
 {
@@ -18,7 +24,11 @@ public class AuthController : ApiBaseController
         _roleInitializerService = roleInitializerService;
     }
 
-
+    /// <summary>
+    /// Метод для регистрации
+    /// </summary>
+    /// <param name="userRegisterDto"></param>
+    /// <returns></returns>
     [HttpPost("register")]
     public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
     {

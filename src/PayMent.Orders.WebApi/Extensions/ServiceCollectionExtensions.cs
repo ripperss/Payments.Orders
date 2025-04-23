@@ -1,4 +1,6 @@
-﻿using Hangfire;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
+using Hangfire;
 using Hangfire.PostgreSql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -9,11 +11,13 @@ using Microsoft.OpenApi.Models;
 using PayMent.Orders.Domain.Data;
 using PayMent.Orders.Domain.Items;
 using PayMent.Orders.Domain.Models;
+using PayMent.Orders.WebApi.Backgroundservices;
 using PayMents.Orders.Application.Abstractions;
 using PayMents.Orders.Application.MapperProfiels;
 using PayMents.Orders.Application.MapperProfile;
 using PayMents.Orders.Application.Service;
 using PayMents.Orders.Application.Settings;
+using PayMents.Orders.Application.Validators;
 using System.Runtime.CompilerServices;
 using System.Text;
 
@@ -80,8 +84,12 @@ public static class ServiceCollectionExtensions
         builder.Services.AddScoped<IAuthService, AuthService>();
         builder.Services.AddScoped<IEmailService, EmailService>();
         builder.Services.AddScoped<IRoleInitializerService, RoleInitializerService>();
+        builder.Services.AddScoped<IAccountsService, AccountsService>();
 
-        
+        // Регистрация валидаторов
+        builder.Services.AddValidatorsFromAssemblyContaining<AccountRequestValidator>();
+        builder.Services.AddValidatorsFromAssemblyContaining<AccountResponseValidator>();
+
         return builder;
     }
 
@@ -144,6 +152,13 @@ public static class ServiceCollectionExtensions
         });
 
         builder.Services.AddHangfireServer();
+
+        return builder;
+    }
+
+    public static WebApplicationBuilder AddBackgroundService(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddHostedService<CreateOrderConsumer>();
 
         return builder;
     }

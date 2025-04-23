@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayMents.Orders.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca9a820d1aee039d7845bb5a649c01d3986c695d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d90c44ff80ee735cc25e40dd888b82d0e8e6ca28")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayMents.Orders.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayMents.Orders.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

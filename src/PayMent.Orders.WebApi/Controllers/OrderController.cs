@@ -8,6 +8,9 @@ using PayMents.Orders.Application.Models.Orders;
 
 namespace PayMent.Orders.WebApi.Controllers;
 
+/// <summary>
+/// Контроллер для управления заказами
+/// </summary>
 [Route("api/orders")]
 [ApiController]
 public class OrderController : ApiBaseController
