@@ -94,7 +94,6 @@ public class AuthService : IAuthService
         var refreshToken = await CreateRefreshToken(user.Id);
 
         await _ordersDbContext.RefreshTokens.AddAsync(refreshToken);
-        await _ordersDbContext.SaveChangesAsync();
 
         userResponse.Token = token;
 
@@ -125,7 +124,7 @@ public class AuthService : IAuthService
     }
 
 
-    private async Task<string> GenerateToken(UserIdentity userIdentity)
+    public async Task<string> GenerateToken(UserIdentity userIdentity)
     {
         var handler = new JwtSecurityTokenHandler();
 
@@ -144,6 +143,9 @@ public class AuthService : IAuthService
             Expires = expires,
             SigningCredentials = credentials
         };
+
+        var refreshToken = CreateRefreshToken(userIdentity.Id);
+        _ordersDbContext.SaveChanges();
 
         var token = handler.CreateToken(tokenDescriptor);
 
@@ -187,5 +189,25 @@ public class AuthService : IAuthService
         };
 
         return refreshToken;
+    }
+
+    public async Task<string> RefreshTokenValidate(string refreshToken)
+    {
+        var token = await _ordersDbContext.RefreshTokens
+            .FirstOrDefaultAsync(reftoken => reftoken.Token == refreshToken);
+
+        if (token == null || token.Expires < DateTime.UtcNow)
+            throw new SecurityTokenException("Invalid refresh token");
+
+        var user = await _userManager.FindByIdAsync(token.UserId);
+        if (user == null)
+            throw new SecurityTokenException("User not found");
+
+        _ordersDbContext.RefreshTokens.Remove(token);
+        await _ordersDbContext.SaveChangesAsync();
+
+        var newJwtToken = await GenerateToken(user);
+
+        return newJwtToken;
     }
 }
