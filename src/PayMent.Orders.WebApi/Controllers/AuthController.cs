@@ -18,7 +18,8 @@ public class AuthController : ApiBaseController
     private readonly IAuthService _authService;
     private readonly IRoleInitializerService _roleInitializerService;
 
-    public AuthController(IAuthService authService, IRoleInitializerService roleInitializerService)
+    public AuthController(IAuthService authService
+        , IRoleInitializerService roleInitializerService)
     {
         _authService = authService;
         _roleInitializerService = roleInitializerService;
@@ -92,4 +93,12 @@ public class AuthController : ApiBaseController
 
         return Ok();
     }
+
+    [HttpPost("refresh")]
+    public async Task<IActionResult> Refresh(RefreshRequest request)
+    {
+        var response = _authService.RefreshTokenValidate(request.RefreshToken);
+
+        return Ok(response);
+    }   
 }

@@ -9,7 +9,6 @@ public class NotificationEmailBackground
     private readonly IEmailService _emailService;
     private readonly IAccountsService _accountsService;
 
-
     public NotificationEmailBackground(IEmailService emailService, IAccountsService accountsService)
     {
         _emailService = emailService;
